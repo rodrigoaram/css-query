@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #CCC;
+}
+
+#site{
+    width: 1024px;
+    background: #FFF;
+    border-radius: 15px;
+    margin:20px auto;
+    min-height: 500px;
+}
+
+#topo{
+    padding:20px;
+}
+#topo h1{
+    text-align: center;
+}
+
+nav{
+    background: #0c133f;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+nav a{
+    color: #FFF;
+    text-decoration: none;
+    display: inline-block;
+    padding:5px;
+}
+
+#imagem-destaque{
+    height: 300px;
+    background-image: url(destaque.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#chamadas{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+.box{
+    width: 100%;
+    border: 1px solid #000;
+    padding: 10px;
+}
+.box h2{
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+}
+
+.box p{
+    text-align: justify;
+    line-height: 22px;
+    text-indent: 30px;
+}
+
+
+footer{
+    padding: 30px;
+    text-align: center;
+    border-top:5px solid #333
+}
+
+
+
+@media(max-width:1024px){
+    #site{
+        width: 800px;   
+    }
+}
+
+@media(max-width: 800px){
+    #site{
+        width: 98%;
+        margin: 10px 1%;
+    }
+
+    #topo nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px
+    }
+    #topo nav a{
+        border-bottom: 1px solid #FFF;
+        width:100%;
+        text-align: center;
+    }
+
+    #imagem-destaque{
+        display: none;
+    }
+
+    #chamadas{
+        flex-direction: column;
+    }
+}
